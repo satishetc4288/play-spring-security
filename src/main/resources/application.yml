@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: play-spring-security
+server:
+  port: 8081
