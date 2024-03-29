@@ -3,3 +3,7 @@ spring:
     name: play-spring-security
 server:
   port: 8081
+
+security:
+  jwt:
+    secret-key: undersecretary

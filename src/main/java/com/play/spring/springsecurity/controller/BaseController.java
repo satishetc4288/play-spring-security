@@ -12,6 +12,13 @@ public class BaseController {
 
     @GetMapping("/greet")
     public ResponseEntity<String> greetings(@RequestParam String name){
+
         return ResponseEntity.ok("Hello, " + name);
     }
+
+    @GetMapping("/jwt")
+    public String checkJwt(){
+        return "jwd is working finally";
+    }
+
 }
