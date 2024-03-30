@@ -26,7 +26,7 @@ public class WebSecurityConfig {
             .cors(AbstractHttpConfigurer::disable)
             .httpBasic(Customizer.withDefaults())
             .sessionManagement( session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .securityMatcher("/**")
+            //.securityMatcher("/**")
             .authorizeHttpRequests( configure -> configure
                 .requestMatchers("/actuator/*", "GET").permitAll()
                 .requestMatchers("/auth/login", "POST").permitAll()

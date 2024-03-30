@@ -21,7 +21,6 @@ public class JwtPrincipalConvertor {
         if(claim.isNull() || claim.isMissing())
             return List.of();
         return claim.asList(SimpleGrantedAuthority.class);
-
     }
 
 }
